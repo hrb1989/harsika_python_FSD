@@ -215,3 +215,98 @@ enter the value of b: 15
 enter the operation (+ - * / %): -
 subtraction of a and b is 35
 '''
+
+# Loops - Perform same operations, several times
+
+var_4 = "Hi Harsika!!"
+# Print this n number of times - Ex., n=5
+# print(var_4)
+# print(var_4)
+# print(var_4)
+# print(var_4)
+# print(var_4)
+
+# Definite Elements and indefinite elements - Target times known and Target times unknown
+# Elements - Iterables - List, Tuple, Set, Dictionary
+# Target - value number of repetation - n = 5; len(list/set/tuple/dictionary)
+# for loop and while loop
+# for loop - when we have iterable/elements involved in the repeatation - index based loop
+# while loop - number of repetation involved in the looping system - condition based loop - high probability for infinite loops - Think about failure scenario before we use while
+
+# for temp in iterables:
+#   statement/operation/expression
+
+# while (Condition):
+#   statement/operation/expression
+#   increment/decrement
+
+n=5
+# while (n>0):
+#     print(var_4)
+#     n=n-1
+
+# i=0
+# while i < n:
+#     print(var_4)
+#     i=i+1
+
+for i in range(n): # On the Box function/Built In Function - Creates a list with 5 elements starts from 0
+    print(var_4)
+
+
+var_5 = "Hi Harsika"
+# n = 5
+# # Hi Harsika 1
+# # Hi Harsika 2
+
+# i=1
+# while i <= n:
+#     print(var_5, i)
+#     i=i+1
+
+for i in range(n):
+    print(var_5, i+1)
+
+# i=0
+# while i < n:
+#     i=i+1
+#     if i == 3:
+#         continue
+#     else:
+#         print(var_5, i)
+
+# i=1
+# while i <= n:
+#     if i == 3:
+#         i=i+1
+#         continue
+#     else:
+#         print(var_5, i)
+#         i=i+1
+
+for i in range(n):
+    if i+1 == 3:
+        continue
+    else:
+        print(var_5, i+1)
+
+n = int(input("Enter number of times to repeat: "))
+i = 1
+while(True):
+    if i > n:
+        break
+    else:
+        print(var_5, i)
+        i=i+1
+
+'''
+Task:
+Create a script:
+get input range of elements start num and end num
+get input of table
+print only the divisible numbers in that range
+Ex.,start - 51 end - 100 table - 5
+55 60 65 70 75 80 85 90 95 100
+Ex.,start - 51 end - 100 table - 10
+60 70 80 90 100
+'''
