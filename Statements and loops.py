@@ -310,3 +310,7 @@ Ex.,start - 51 end - 100 table - 5
 Ex.,start - 51 end - 100 table - 10
 60 70 80 90 100
 '''
+
+'''
+Same Calculator but with loop with a question - continue or stop
+'''
