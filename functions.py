@@ -94,3 +94,45 @@ Task:
 Try the Calculator with function
 Try the Tables with function
 '''
+# User and Auth functions
+def create_user():
+    pass
+
+def user_login():
+    pass
+
+def user_logout():
+    pass
+
+def update_user():
+    pass
+
+def delete_user():
+    pass
+
+# Anonymous Function - Lambda - Function without a Name
+# lambda - small, 1 line
+# lambda - can accept any number of args but executes only 1 expression/statement and it returns a value
+# syntax
+# lambda *args: expr
+
+sum_1 = lambda a=3,b=4: a+b 
+print(sum_1)
+print(sum_1())
+
+sum_2 = lambda a,b: a+b
+print(sum_2(8,6))
+
+num_1 = int(input("Enter the value of a: "))
+num_2 = int(input("Enter the value of b: "))
+print(sum_2(num_1, num_2))
+
+# usage of lambda in a normal function will change its behaviour
+def multing(num):
+    return lambda a:a*num
+
+doubler = multing(2) # Passed value for num to function multing
+tripler = multing(3) # Passed value for num to function multing
+
+print(doubler(4)) # Passed value for a in lambda
+print(tripler(4)) # Passed value for a in lambda
