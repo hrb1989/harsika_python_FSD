@@ -110,3 +110,31 @@ emp2_1.prof_qualification()
 
 # print(emp2_1.__dob)
 print(emp2_1.show_dob())
+
+
+# Error Handling/Exception Handling - Try & Exception (Catch) block
+# to avoid stoppage of program abruptly, we use exception handling
+try:
+    print(emp2_1.dob)
+    # print("emp2_1.dob")
+except TypeError as t:
+    print("Some Type Error, check the datatype:", t)
+except ValueError as v:
+    print("Some Value Error, check the Value you have passed:", v)
+except AttributeError as a:
+    print("Attribute missing, check the property you are trying:", a)
+except Exception as e:
+    # print("Hope dob is unavailable, please check again!!!")
+    print("some issues with dob, following is the error received:")
+    print("------------------------------------")
+    print(e)
+    print("------------------------------------")
+finally:
+    print("This executes as a final statement!!!") # In both success and failure scenarios
+print("Thank you for using our tool!")
+
+# Object creation with User inputs
+name = input("Enter the emp name: ")
+email = input("Enter the emp email ID: ")
+emp2_2 = Employee2(name, email, "Male", "Bengaluru", "BE", "18/Nov/89", 2011, 14, "Infrastructure Automation")
+emp2_2.introduce()
