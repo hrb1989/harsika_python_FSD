@@ -2,17 +2,17 @@ import mysql.connector
 
 cnx = mysql.connector.connection.MySQLConnection(
     user='root',
-    password='',
+    password='Password123',
     host='127.0.0.1',
-    database='employees'
+    database='course_registration'
 )
 
 #Direct connect, no need to use connect later
 cnx = mysql.connector.connect(
     user='root',
-    password='',
+    password='Password123',
     host='127.0.0.1',
-    database='employees'
+    database='course_registration'
 )
 
 # cnx.connect()
